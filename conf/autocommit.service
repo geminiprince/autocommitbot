@@ -1,0 +1,19 @@
+[Unit]
+Description=AutoCommitBot - Automatically commits inspirational quotes to GitHub
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/autocommitbot
+WorkingDirectory=%h
+Restart=always
+RestartSec=5s
+
+# Environment variables
+Environment=GIT_AUTHOR_NAME=geminiprince
+Environment=GIT_AUTHOR_EMAIL=geminiprinceee@gmail.com
+Environment=GIT_COMMITTER_NAME=geminiprince
+Environment=GIT_COMMITTER_EMAIL=geminiprinceee@gmail.com
+
+[Install]
+WantedBy=default.target

@@ -1,11 +1,45 @@
-# Prerequisites
-*.d
+# Build directory
+build/
+
+# Executable
+autocommitbot
 
 # Object files
 *.o
-*.ko
-*.obj
-*.elf
+
+# Dependency files
+*.d
+
+# IDE specific files
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+
+# Local configuration
+*.local
+
+# Logs
+*.log
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Local development files
+.env
+*.bak
+*.backup
+
+# Binaries
+/bin/
+/autocommitbot
+
+# Local config
+/config/*.conf
+!/config/example.conf
 
 # Linker output
 *.ilk
